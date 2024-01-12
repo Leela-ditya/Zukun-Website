@@ -1,0 +1,265 @@
+/* importing poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* root css */
+:root {
+  --default: 96%;
+    --neutral: 240 58%, ;
+  --light-color: 245, 245,245;
+  --landing--backgroundColor: #fdfbff;
+  --icon-color: #06285e;
+  --institute-bg-color: #f7f4f4;
+    --institute-popup: #b6d3ff;
+  --landing--backgroundColor: #fdfbff;
+  --icon-color: #06285e;
+  --bg-img: #fdfbff;
+  --border-color: #06285e75;
+  --heading-color: #000000;
+  --landing-text-color: #ffffff;
+  --small-margin:.5rem;
+  --small-padding:.5rem;
+  --medium-margin:1rem;
+  --medium-padding:1rem;
+  --large-margin:1.5rem;
+  --large-padding:1.5rem;
+  --small-mar-top:1rem;
+  --large-mar-top:1.5rem;
+  --line-height:1.5rem;
+  --mar-bot:1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/********************** start **********************/
+h2{
+  margin-bottom: var(--mar-bot);
+  font-weight: 600;
+}
+.para{
+  line-height: var(--line-height);
+}
+.modules{
+  padding: .5rem 1.5rem;
+  border-radius: 10px; 
+  background-color: rgb(var(--light-color));
+}
+.modules-content{
+  display: grid;
+  gap: 1rem;
+}
+.modules-content li{
+  line-height: var(--line-height);
+}
+/*********************** end ************************/
+.sub-container {
+  display: flex;
+}
+
+/* Overview Section */
+.overview-content{
+  padding: .5rem 1.5rem;
+  border-radius: 10px; 
+  background-color: var(--landing--backgroundColor);
+}
+.overview-section-heading h2 span {
+  color: var(--icon-color);
+}
+
+.overview-content p {
+  color: var(--heading-color);
+}
+
+/* Skill Section */
+.skill-section {
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(128, 128, 128, 0.046);
+  box-shadow: 0 2px 2px gray;
+  border-radius: 10px;
+}
+
+.skill-section-heading h2 span {
+  color: var(--icon-color);
+}
+
+.skills-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.skills-icons span {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.skills-icons span i {
+  font-size: 30px;
+  color: var(--icon-color);
+  margin-right: 10px;
+}
+
+/* Modules */
+.modules-heading h2 {
+  color: var(--heading-color);
+}
+
+.modules{
+  background-color: var(--landing--backgroundColor) !important;
+  border-radius: 10px;
+}
+
+.modules ul{
+  list-style-type: disc !important;
+}
+
+/* Skills Covered & Tools Covered */
+
+.skills-covered{
+  background-color: rgba(128, 128, 128, 0.046) !important;
+  border-radius: 10px;
+}
+
+.tools-covered {
+  background-color: var(--landing--backgroundColor);
+  border-radius: 10px;
+}
+
+.skills-covered-heading h2,
+.tools-covered-heading h2 {
+  color: var(--heading-color);
+}
+
+.skills-content,
+.tools-content {
+  display: grid;
+}
+
+.skill-subcontent,
+.tools-subcontent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.skills{
+  border-bottom: 5px solid var(--light-primary) !important;
+  
+}
+.tools{
+  border-left: 5px solid var(--icon-color) !important;
+}
+.skills,
+.tools {
+  border: 0.1px solid grey;
+  border-radius: 2px;
+  font-weight: bold;
+  color: var(--heading-color);
+  padding: 5px 25px;
+}
+
+/* Operations */
+.placement{
+  padding: .5rem 1.5rem;
+  border-radius: 10px; 
+  background-color: rgb(var(--light-color));
+}
+.placement h2 {
+  color: var(--heading-color);
+}
+
+.placement-content p {
+  color: var(--heading-color);
+}
+
+/* .top-institutes start */
+.top-institutes {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  /* background-color: var(--landing--backgroundColor); */
+  overflow: hidden;
+  position: sticky;
+  top: 70px;
+}
+
+.institute-title {
+  line-height: 3.5rem;
+  max-height: 3.5rem;
+  color: var(--institute-bg-color);
+  padding-left: 10px;
+  /* border: 2px solid rgb(120, 120, 120, 0.05); */
+  background: url(../images/institute\ img.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.institute-names {
+  display: grid;
+  gap: 10px;
+  padding: 0rem 0.5rem;
+  list-style-type: none;
+}
+
+.institute-names li span img {
+  width: 42px;
+  border-radius: 50%;
+  border: 4px solid rgb(120, 120, 120, 0.05);
+}
+
+.institute {
+  border-radius: 1.3rem;
+  background-color: var(--institute-bg-color);
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.institute a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.institute a{
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
+.institute a div span i{
+  margin-right: 1rem;
+  color: var(--institute-popup);
+  font-size: 12px;
+}
+
+.institute-names li {
+  font-size: 15px;
+}
+
+/* .banner-section start*/
+.banner-section {
+  background: url('../images/background.jpg') center/cover no-repeat;
+  height: 300px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.banner-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+
+}
+
+.banner-section p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
